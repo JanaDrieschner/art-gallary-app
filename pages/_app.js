@@ -1,7 +1,7 @@
 import GlobalStyle from "../styles";
 import { SWRConfig } from "swr";
 
-const fetcher = (url) => fetcher(url).then((r) => r.json());
+const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default function App({ Component, pageProps }) {
   return (
