@@ -5,15 +5,14 @@ export default function ArtPiecePreview({ pieces }) {
   return (
     <>
       <li key={pieces.slug}>
+        <h2>{pieces.name}</h2>
         <Image
           src={pieces.imageSource}
           width={400}
           height={400}
           alt="painting"
         />
-        <p>
-          {pieces.artist}, {pieces.name}
-        </p>
+        <p>{pieces.artist}</p>
       </li>
     </>
   );
