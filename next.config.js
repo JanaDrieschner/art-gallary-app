@@ -5,6 +5,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
+    loader: "default",
     domains: ["example-apis.vercel.app"],
   },
   webpack(config) {

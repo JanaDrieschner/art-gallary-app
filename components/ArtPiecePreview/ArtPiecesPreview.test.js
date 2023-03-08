@@ -26,9 +26,9 @@ test("render a title", () => {
 });
 
 test("render an image", () => {
-  render(<ArtPiecePreview peace={example} />);
+  render(<ArtPiecePreview pieces={example} />);
 
-  const testImage = screen.getByRole("Image");
+  const testImage = screen.getByRole("img");
 
   expect(testImage).toBeInTheDocument();
 });
