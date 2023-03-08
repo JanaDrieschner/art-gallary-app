@@ -1,11 +1,12 @@
-import ArtPiecePreview from "../ArtPiecePreview";
+import ArtPiecePreview from "../ArtPiecePreview/index.js";
+import Image from "next/image";
 
 export default function ArtPieces({ pieces }) {
-  return (
-    <ul>
-      {pieces.map((piece) => {
-        return <li key={piece.slug}>{piece.name}</li>;
-      })}
-    </ul>
-  );
+  return pieces.map((piece) => {
+    return (
+      <ul key={piece.slug}>
+        <ArtPiecePreview pieces={piece} />
+      </ul>
+    );
+  });
 }
