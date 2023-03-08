@@ -7,6 +7,7 @@ export default function ArtPiecePreview({ pieces }) {
       <li key={pieces.slug}>
         <h2>{pieces.name}</h2>
         <Image
+          priority
           src={pieces.imageSource}
           width={400}
           height={400}
