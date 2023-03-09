@@ -1,4 +1,3 @@
-import ArtPieces from "../ArtPieces";
 import Image from "next/image";
 
 export default function ArtPiecePreview({ pieces }) {
