@@ -1,3 +1,10 @@
+random-page
+function RandomPicture () => {
+    return (  );
+}
+ 
+export function Random 
+
 import Image from "next/image";
 
 export default function Spotlight({ image, artist }) {
@@ -12,3 +19,4 @@ export default function Spotlight({ image, artist }) {
     </ul>
   );
 }
+main
